@@ -347,6 +347,44 @@
 <pin name="3" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="FRAME_A_L">
+<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="6" rows="5" layer="94" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="22.86" y="30.48" size="2.54" layer="94">&gt;PROJECT</text>
+<text x="2.54" y="30.48" size="2.54" layer="94">Project:</text>
+<text x="2.54" y="25.4" size="2.54" layer="94">Designer:</text>
+<text x="22.86" y="25.4" size="2.54" layer="94">&gt;DESIGNER</text>
+<text x="88.9" y="7.62" size="2.54" layer="94">&gt;REV</text>
+<text x="1.016" y="7.874" size="1.778" layer="94">This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+http://creativecommons.org/licenses/by-sa/4.0/</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="INA21*" prefix="U">
@@ -512,6 +550,20 @@
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FRAME_A_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt; A Size , 8 1/2 x 11 INCH, Landscape&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -6880,62 +6932,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="frames" urn="urn:adsk.eagle:library:229">
-<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="LETTER_L" urn="urn:adsk.eagle:symbol:13870/1" library_version="1">
-<frame x1="0" y1="0" x2="248.92" y2="185.42" columns="12" rows="17" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
-</symbol>
-<symbol name="DOCFIELD" urn="urn:adsk.eagle:symbol:13864/1" library_version="1">
-<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
-<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
-<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
-<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
-<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
-<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
-<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
-<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
-<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LETTER_L" urn="urn:adsk.eagle:component:13920/1" prefix="FRAME" uservalue="yes" library_version="1">
-<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
-LETTER landscape</description>
-<gates>
-<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6968,9 +6964,13 @@ LETTER landscape</description>
 <part name="R8" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="R9" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="GND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C4" library="bschulz_passives" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="FRAME1" library="bschulz" deviceset="FRAME_A_L" device="">
+<attribute name="DESIGNER" value="Bobby Schulz"/>
+<attribute name="PROJECT" value="Raven"/>
+<attribute name="REV" value="v0.0"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -6984,12 +6984,9 @@ C1 = 3.3uF
 Cutoff = 4.85kHz</text>
 <text x="33.02" y="157.48" size="1.778" layer="91">Active 2nd Order Filter
 Cuttoff at 20Hz</text>
-<wire x1="0" y1="76.2" x2="147.32" y2="76.2" width="0.1524" layer="94"/>
-<wire x1="147.32" y1="76.2" x2="147.32" y2="35.56" width="0.1524" layer="94"/>
-<text x="5.08" y="66.04" size="3.81" layer="94" font="vector">CSA</text>
-<wire x1="147.32" y1="76.2" x2="147.32" y2="185.42" width="0.1524" layer="94"/>
-<text x="5.08" y="175.26" size="3.81" layer="94" font="vector">Referance</text>
-<text x="152.4" y="175.26" size="3.81" layer="94" font="vector">Connectors</text>
+<text x="5.08" y="78.74" size="3.81" layer="91" font="vector">CSA</text>
+<text x="5.08" y="175.26" size="3.81" layer="91" font="vector">Referance</text>
+<text x="195.58" y="175.26" size="3.81" layer="91" font="vector">Connectors</text>
 <text x="63.5" y="121.92" size="1.778" layer="91">for 220 Ohm, cuttoff is ~33Hz</text>
 </plain>
 <instances>
@@ -7026,12 +7023,6 @@ Cuttoff at 20Hz</text>
 </instance>
 <instance part="GND2" gate="1" x="106.68" y="17.78" smashed="yes">
 <attribute name="VALUE" x="106.68" y="17.526" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
-<instance part="FRAME3" gate="G$2" x="147.32" y="0" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="160.02" y="1.27" size="2.54" layer="94"/>
-<attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
 </instance>
 <instance part="JP1" gate="G$1" x="101.6" y="142.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="99.06" y="141.859" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -7073,12 +7064,12 @@ Cuttoff at 20Hz</text>
 <instance part="GND5" gate="1" x="27.94" y="129.54" smashed="yes">
 <attribute name="VALUE" x="27.94" y="129.286" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="J1" gate="G$1" x="185.42" y="162.56" smashed="yes">
-<attribute name="VALUE" x="182.88" y="157.734" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="182.88" y="168.148" size="1.778" layer="95" font="vector"/>
+<instance part="J1" gate="G$1" x="198.12" y="162.56" smashed="yes">
+<attribute name="VALUE" x="195.58" y="157.734" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="195.58" y="168.148" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J2" gate="G$1" x="187.96" y="147.32" smashed="yes">
-<attribute name="NAME" x="182.88" y="155.448" size="1.778" layer="95" font="vector"/>
+<instance part="J2" gate="G$1" x="200.66" y="147.32" smashed="yes">
+<attribute name="NAME" x="195.58" y="155.448" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="GND6" gate="1" x="101.6" y="129.54" smashed="yes">
 <attribute name="VALUE" x="101.6" y="129.286" size="1.778" layer="96" align="top-center"/>
@@ -7086,6 +7077,19 @@ Cuttoff at 20Hz</text>
 <instance part="C4" gate="G$1" x="17.78" y="35.56" smashed="yes">
 <attribute name="NAME" x="19.304" y="35.941" size="1.778" layer="95"/>
 <attribute name="VALUE" x="19.304" y="30.861" size="1.778" layer="96"/>
+</instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="REV" x="0" y="0" size="1.778" layer="96" display="off"/>
+<attribute name="PROJECT" x="0" y="0" size="1.778" layer="96" display="off"/>
+<attribute name="DESIGNER" x="0" y="0" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FRAME1" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+<attribute name="PROJECT" x="195.58" y="30.48" size="2.54" layer="94"/>
+<attribute name="DESIGNER" x="195.58" y="25.4" size="2.54" layer="94"/>
+<attribute name="REV" x="261.62" y="7.62" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -7128,8 +7132,8 @@ Cuttoff at 20Hz</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="165.1" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
-<label x="193.04" y="165.1" size="1.778" layer="95"/>
+<wire x1="205.74" y1="165.1" x2="213.36" y2="165.1" width="0.1524" layer="91"/>
+<label x="205.74" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOAD-" class="0">
@@ -7143,8 +7147,8 @@ Cuttoff at 20Hz</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="162.56" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
-<label x="193.04" y="162.56" size="1.778" layer="95"/>
+<wire x1="205.74" y1="162.56" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
+<label x="205.74" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="REF" class="0">
@@ -7193,8 +7197,8 @@ Cuttoff at 20Hz</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="144.78" x2="200.66" y2="144.78" width="0.1524" layer="91"/>
-<label x="195.58" y="144.78" size="1.778" layer="95"/>
+<wire x1="205.74" y1="144.78" x2="213.36" y2="144.78" width="0.1524" layer="91"/>
+<label x="208.28" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -7210,8 +7214,8 @@ Cuttoff at 20Hz</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="193.04" y1="152.4" x2="200.66" y2="152.4" width="0.1524" layer="91"/>
-<label x="195.58" y="152.4" size="1.778" layer="95"/>
+<wire x1="205.74" y1="152.4" x2="213.36" y2="152.4" width="0.1524" layer="91"/>
+<label x="208.28" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -7226,8 +7230,8 @@ Cuttoff at 20Hz</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="193.04" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
-<label x="195.58" y="149.86" size="1.778" layer="95"/>
+<wire x1="205.74" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
+<label x="208.28" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -7251,8 +7255,8 @@ Cuttoff at 20Hz</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
-<label x="195.58" y="147.32" size="1.778" layer="95"/>
+<wire x1="205.74" y1="147.32" x2="213.36" y2="147.32" width="0.1524" layer="91"/>
+<label x="208.28" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7299,6 +7303,13 @@ Cuttoff at 20Hz</text>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
 <junction x="27.94" y="147.32"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<wire x1="5.08" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91" style="longdash"/>
+<wire x1="149.86" y1="101.6" x2="274.32" y2="101.6" width="0.1524" layer="91" style="longdash"/>
+<wire x1="149.86" y1="210.82" x2="149.86" y2="101.6" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 </nets>
